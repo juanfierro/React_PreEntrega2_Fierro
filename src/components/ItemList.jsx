@@ -22,14 +22,14 @@ const ItemList = ({ products, onAddToCart, onRemoveFromCart }) => {
               <div className="media">
                 <div className="media-content">
                   <p className="title is-5">{product.name}</p>
-                  <p className="subtitle is-6 has-text-grey">
+                  {/* <p className="subtitle is-6 has-text-grey">
                     {product.descrip}
-                  </p>
+                  </p> */}
                 </div>
               </div>
-              <div className="content">
+              {/* <div className="content">
                 <p className="has-text-weight-bold">${product.price}</p>
-              </div>
+              </div> */}
               <div
                 className="buttons is-flex is-justify-content-space-between"
                 style={{ marginTop: "1rem" }}
