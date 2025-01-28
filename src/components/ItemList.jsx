@@ -9,7 +9,7 @@ const ItemList = ({ products, onAddToCart, onRemoveFromCart }) => {
           <div
             className="card"
             style={{
-              transform: "scale(0.9)", // Escala ligeramente las cartas
+              transform: "scale(0.9)",
               transformOrigin: "center",
             }}
           >

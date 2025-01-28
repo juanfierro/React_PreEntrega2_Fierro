@@ -11,7 +11,6 @@ export default function App() {
     <BrowserRouter>
       <NavBar cartCount={cartCount} />
       <Routes>
-        {/* Ruta principal */}
         <Route
           path="/"
           element={
@@ -22,7 +21,6 @@ export default function App() {
           }
         />
 
-        {/* Ruta de categoría */}
         <Route
           path="/category/:categoryId"
           element={
@@ -35,10 +33,8 @@ export default function App() {
           }
         />
 
-        {/* Ruta de detalles del producto */}
         <Route path="/item/:itemId" element={<ItemDetailsContainer />} />
 
-        {/* Ruta de error */}
         <Route path="*" element={<h1>404 NOT FOUND</h1>} />
       </Routes>
     </BrowserRouter>

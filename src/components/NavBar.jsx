@@ -6,7 +6,7 @@ const NavBar = ({ cartCount }) => {
   return (
     <nav className="navbar has-shadow" style={{ backgroundColor: "#f9f4e8" }}>
       <div className="container">
-        {/* Logo / Brand */}
+
         <div className="navbar-brand">
           <Link
             className="navbar-item has-text-primary is-size-4 has-text-weight-bold"
@@ -14,7 +14,7 @@ const NavBar = ({ cartCount }) => {
           >
             MiBouquet
           </Link>
-          {/* Navbar toggler for mobile */}
+
           <button
             className="navbar-burger"
             aria-label="menu"
@@ -27,30 +27,29 @@ const NavBar = ({ cartCount }) => {
           </button>
         </div>
 
-        {/* Navbar links */}
+
         <div id="navbarMenu" className="navbar-menu">
           <div className="navbar-end">
             <Link
               className="navbar-item has-text-weight-medium has-text-grey-dark"
-              to="/category/auriculares"
+              to="/category/ramos"
             >
-              Auriculares
+              Ramos
             </Link>
             <Link
               className="navbar-item has-text-weight-medium has-text-grey-dark"
-              to="/category/parlantes"
+              to="/category/flores"
             >
-              Parlantes
+              Flores de Solapa
             </Link>
             <Link
               className="navbar-item has-text-weight-medium has-text-grey-dark"
-              to="/category/notebooks"
+              to="/category/coronas"
             >
-              Notebooks
+              Coronas
             </Link>
           </div>
 
-          {/* Cart Widget */}
           <div className="navbar-item">
             <CartWidget cartCount={cartCount} />
           </div>

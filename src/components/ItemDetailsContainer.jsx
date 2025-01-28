@@ -17,7 +17,6 @@ const ItemDetailsContainer = () => {
       <div className="container">
         {product ? (
           <div className="columns is-vcentered">
-            {/* Imagen del producto */}
             <div className="column is-half has-text-centered">
               <figure className="image">
                 <img
@@ -29,16 +28,10 @@ const ItemDetailsContainer = () => {
               </figure>
             </div>
 
-            {/* Detalles del producto */}
             <div className="column is-half">
               <h1 className="title is-3 mb-4">{product.name}</h1>
               <p className="subtitle is-5 has-text-grey mb-4">{product.descrip}</p>
               <p className="title is-4 has-text-primary">${product.price}</p>
-
-              {/* Botón de acción */}
-              <button className="button is-success is-large mt-5">
-                Agregar al carrito
-              </button>
             </div>
           </div>
         ) : (
